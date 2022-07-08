@@ -57,4 +57,4 @@
   <br>
 
 - 위의 코드 처럼 웹 페이지는 다양한 HTML 태그로 이루어져 있음
-- HTML 기초개념(teg, content, attribute, element)의 형태
+- HTML 기초개념(tag, content, attribute, element)의 형태
