@@ -73,7 +73,7 @@ h1 {
 - HTML과 CSS 코드는 각기 다른 파일에 작성되어 있음
 - 아직 두 파일은 아무 관계가 없음
 
-![s](./img/CSS_EX.png)
+![s](./img/CSS.png)
 
 - > VS Code에서 각각 파일 만들기
 
