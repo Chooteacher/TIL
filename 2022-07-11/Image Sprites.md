@@ -41,7 +41,7 @@
 <br>
 <br>
 
-![s](./Img/hero1.png)
+![s](./img/hero1.png)
 
 - > 스프라이트 이미지
 
