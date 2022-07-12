@@ -23,3 +23,36 @@
 - > position: absolute는 이름의 뜻과 같이 절대적인 위치에 요소를 배치하는데, 그 부모의 위치를 기준으로 절대적으로 움직이게 됩니다.
 
 - > background-position은 배경이미지가 표시되는 위치를 조절합니다.
+
+<br>
+<br>
+
+![s](./img/hero.png)
+
+- > 원본 용사
+
+<br>
+<br>
+
+![s](./img/dragon.png)
+
+- > 바꾼 노란용
+
+<br>
+<br>
+
+![s](./Img/hero1.png)
+
+- > 스프라이트 이미지
+
+<br>
+
+### 코드는 이쪽에서 확인해주세요!
+
+- (https://github.com/Chooteacher/udemy-ghost-rain-clone/blob/main/index.html)
+
+  - > html 코드
+
+- (https://github.com/Chooteacher/udemy-ghost-rain-clone/blob/main/style.css)
+
+  - > css 코드
