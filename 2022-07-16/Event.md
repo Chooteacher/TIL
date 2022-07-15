@@ -26,7 +26,7 @@
 - 자바스크립트(JavaScript)는 웹과 사용자 간의 동적인 상호작용을 위해 만들어진 언어
 - 자바스크립트에서 사용자에 의해 발생하는 이벤트(Event)를 감지하고 그에 맞는 결과를 내어줄 수 있도록 프로그램을 작성해야 함
 
-## 2) 다양한 웹 이벤트 종류
+## 1-2) 다양한 웹 이벤트 종류
 
 - click
 - dblclick
@@ -37,3 +37,61 @@
 - mouseover
 - ...
 - (https://www.w3schools.com/jsref/dom_obj_event.asp)
+
+<br>
+
+## 2) addEventListener
+
+- addEventListener 함수 HTML 요소에 이벤트를 적용할 때 사용하는 함수
+- evetListener = event + listener ('이벤트를 듣고 있다')
+- 특정 HTML 요소에서 이벤트가 언제 발생하는지 가만히 듣고 있다가, 이벤트가 발생하면 인자(argument)로 받은 함수를 실행시켜 줌
+
+<br>
+
+- addEventListener 함수
+
+```
+요소.addEventListener(이벤트종류, function() {
+  //이벤트가 일어났을 때 실행될 함수
+});
+```
+
+- 이벤트를 적용할 HTML 요소를 지정함
+- 해당 요소의 addEventListener 함수를 실행시켜(=호출) 이벤트를 듣고 있게 함
+- addEventListener 함수엔 두 개의 인자(argument)를 전달
+
+  - 첫 번째 인자 - 이벤트 종류
+  - 두 번째 인자 - 이벤트 발생 시 실행할 함수
+  - cf. 콜백함수(Callback Function) : 인자로 전달된 함수
+
+  <br>
+
+## 2-1) click 이벤트
+
+- 버튼, 사진, 글 등 웹사이트에서 이루어지는 이벤트 중 가장 많은 것이 클릭 이벤트
+  - 로그인 버튼 클릭 -> 로그인 API 호출
+  - 상품 사진 클릭 -> 상품 상세 화면으로 이동
+  - 자세히 보기 버튼 클릭 -> 팝업 화면 출력
+
+```
+<h1>addEventListener</h1>
+<button id="checkDateBtn">날짜 확인</button>
+<p id="showDate"></p>
+```
+
+```
+// 요소 획득
+
+// id가 checkDateBtn인 요소를 가져온다 ("날짜확인"이라는 버튼)
+const checkDateBtn = document.getElementById('checkDateBtn');
+
+// id가 showDate 요소를 가져온다 (날짜 텍스트를 보여줄 p태그)
+const showDate = document.getElementById('showDate');
+
+// checkDateBtn 클릭 이벤트 감지(listen)
+checkDateBtn.addEventListener('click', function() {
+  showDate.innerText = new Date(); // showDate 요소의 내용 >>> 현재 날짜 출력
+});
+```
+
+- 날짜를 보여줄 p태그인 showDate에서, innerText를 사용해도 되고 innerHTML을 사용해도 됨
